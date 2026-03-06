@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mistress Rema | Official Portfolio</title>
+    <title>User Portfolio | Official Page</title>
     <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
     <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
@@ -15,8 +15,8 @@
             font-family: 'Inter', sans-serif;
             background-color: #050505;
             background-image: 
-                radial-gradient(circle at 20% 30%, rgba(139, 92, 246, 0.15) 0%, transparent 40%),
-                radial-gradient(circle at 80% 70%, rgba(236, 72, 153, 0.15) 0%, transparent 40%);
+                radial-gradient(circle at 20% 30%, rgba(99, 102, 241, 0.15) 0%, transparent 40%),
+                radial-gradient(circle at 80% 70%, rgba(168, 85, 247, 0.15) 0%, transparent 40%);
             background-attachment: fixed;
             color: #ffffff;
             overflow-x: hidden;
@@ -30,20 +30,20 @@
         }
 
         .text-gradient {
-            background: linear-gradient(135deg, #fff 30%, #a78bfa 100%);
+            background: linear-gradient(135deg, #fff 30%, #818cf8 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
 
         .btn-premium {
-            background: linear-gradient(135deg, #6366f1 0%, #d946ef 100%);
+            background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
             transition: all 0.3s ease;
-            box-shadow: 0 10px 20px -5px rgba(168, 85, 247, 0.4);
+            box-shadow: 0 10px 20px -5px rgba(79, 70, 229, 0.4);
         }
 
         .btn-premium:hover {
             transform: scale(1.02);
-            box-shadow: 0 15px 25px -5px rgba(168, 85, 247, 0.6);
+            box-shadow: 0 15px 25px -5px rgba(79, 70, 229, 0.6);
         }
 
         .card-feature {
@@ -71,27 +71,27 @@
 
     <script type="text/babel">
         const PROFILE_DATA = {
-            name: "Mistress Rema",
-            title: "Misstress",
-            bio: "Join me on my creative journey through my official platforms. My feet are waiting for you 👣🐕",
+            name: "Your Name Here",
+            title: "Digital Creator",
+            bio: "Welcome to my creative space. Join me on my journey through my official platforms and explore exclusive content updated daily.",
             stats: [
-                { label: "Followers", value: "+10K" },
-                { label: "Works", value: "+150" },
+                { label: "Followers", value: "10K+" },
+                { label: "Projects", value: "150+" },
                 { label: "Experience", value: "3 Years" }
             ],
             features: [
-                { title: "Exclusive Content", desc: "Full access to unreleased photos and videos." },
-                { title: "Custom Requests", desc: "Tailored content created specifically for your desires." },
-                { title: "Direct Support", desc: "Direct and exclusive communication via Telegram." }
+                { title: "Exclusive Access", desc: "Unlock premium content and unreleased highlights." },
+                { title: "Custom Requests", desc: "Tailored creative work based on your specific needs." },
+                { title: "Direct Support", desc: "Fast and direct communication through official channels." }
             ],
             images: {
-                p1: "https://i.ibb.co/5XDxLvPw/IMG-20260306-235324-924.jpg",
-                p2: "https://i.ibb.co/YT0pp26C/IMG-20260306-235337-718.jpg"
+                p1: "https://via.placeholder.com/300/4f46e5/ffffff?text=Avatar",
+                p2: "https://via.placeholder.com/300/7c3aed/ffffff?text=Feature"
             },
             links: {
-                facebook: "https://www.facebook.com/profile.php?id=61587549741687",
-                instagram: "https://www.instagram.com/remy_2029?igsh=MWZjZjRmbXhtYXQ3NQ==",
-                telegram: "https://t.me/remamistress"
+                facebook: "#",
+                instagram: "#",
+                telegram: "#"
             }
         };
 
@@ -102,12 +102,12 @@
                     {/* Header Card */}
                     <div className="glass-container rounded-[3rem] p-8 text-center animate-fade">
                         <div className="flex justify-center gap-4 mb-8">
-                            <img src={PROFILE_DATA.images.p1} className="w-24 h-24 sm:w-32 sm:h-32 rounded-full border-2 border-purple-500/30 p-1 object-cover shadow-2xl" alt="Profile 1" />
-                            <img src={PROFILE_DATA.images.p2} className="w-24 h-24 sm:w-32 sm:h-32 rounded-3xl border-2 border-pink-500/30 p-1 object-cover rotate-3 shadow-2xl" alt="Profile 2" />
+                            <img src={PROFILE_DATA.images.p1} className="w-24 h-24 sm:w-32 sm:h-32 rounded-full border-2 border-indigo-500/30 p-1 object-cover shadow-2xl" alt="Profile 1" />
+                            <img src={PROFILE_DATA.images.p2} className="w-24 h-24 sm:w-32 sm:h-32 rounded-3xl border-2 border-purple-500/30 p-1 object-cover rotate-3 shadow-2xl" alt="Profile 2" />
                         </div>
                         
                         <h1 className="text-4xl sm:text-5xl font-black text-gradient mb-2">{PROFILE_DATA.name}</h1>
-                        <p className="text-purple-400 font-bold tracking-widest text-sm uppercase mb-4">{PROFILE_DATA.title}</p>
+                        <p className="text-indigo-400 font-bold tracking-widest text-sm uppercase mb-4">{PROFILE_DATA.title}</p>
                         <p className="text-gray-400 leading-relaxed max-w-md mx-auto">{PROFILE_DATA.bio}</p>
                         
                         {/* Stats Section */}
@@ -136,7 +136,7 @@
                     <div className="grid grid-cols-1 gap-4 animate-fade" style={{animationDelay: '0.4s'}}>
                         {PROFILE_DATA.features.map((f, i) => (
                             <div key={i} className="card-feature p-5 rounded-2xl flex items-center gap-5">
-                                <div className="w-12 h-12 rounded-xl bg-purple-500/10 flex items-center justify-center text-purple-400 font-bold">
+                                <div className="w-12 h-12 rounded-xl bg-indigo-500/10 flex items-center justify-center text-indigo-400 font-bold">
                                     0{i+1}
                                 </div>
                                 <div>
@@ -160,7 +160,7 @@
                         </a>
                     </div>
 
-                    <p className="text-center text-gray-600 text-xs pb-10">© 2026 Mistress Rema. All rights reserved.</p>
+                    <p className="text-center text-gray-600 text-xs pb-10">© 2026 Your Brand. All rights reserved.</p>
                 </div >
             );
         };
