@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>miss | Official Profile</title>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-NE8QH6RTWG"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-NE8QH6RTWG');
+        </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+        
+        body { 
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            padding: 0;
+            
+            /* ============================================================ */
+            /* 1. EDIT BACKGROUND IMAGE BELOW 👇                         */
+            /* Replace the URL inside the quotes with your image link       */
+            /* ============================================================ */
+            background-image: 
+                linear-gradient(to bottom, rgba(15, 12, 41, 0.85), rgba(48, 43, 99, 0.85), rgba(0, 0, 0, 0.95)), 
+                url('https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=1920'); 
+            /* ============================================================ */
+
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            min-height: 100vh;
+        }
+
+        .glass { 
+            background: rgba(255, 255, 255, 0.05); 
+            backdrop-filter: blur(20px); 
+            border: 1px solid rgba(255, 255, 255, 0.1); 
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+        }
+
+        .icon-hover { transition: all 0.3s ease; color: rgba(255,255,255,0.7); }
+        .icon-hover:hover { transform: translateY(-3px); color: #a78bfa; filter: drop-shadow(0 0 8px rgba(167, 139, 250, 0.5)); }
+        
+        .btn-primary { background: linear-gradient(135deg, #6366f1 0%, #a855f7 100%); }
+        .btn-secondary { background: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.2); }
+    </style>
+</head>
+<body class="text-white flex items-center justify-center min-h-screen p-4">
+
+    <div id="root"></div>
+
+    <script type="text/babel">
+        const ProfileCard = () => {
+            return (
+                <div className="w-full max-w-xl py-10">
+                    <div className="glass rounded-[3rem] overflow-hidden">
+                        
+                        {/* Profile Images Section */}
+                        <div className="flex flex-col md:flex-row gap-8 p-12 items-center justify-center">
+                            
+                            {/* 2. EDIT MAIN PROFILE PICTURE BELOW 👇 */}
+                            <img 
+                                src="https://i.ibb.co/WNk0mXWv/1.jpg" 
+                                alt="Valeria Noire" 
+                                className="w-32 h-32 rounded-full border-2 border-white/20 p-1 shadow-2xl object-cover" 
+                            />
+                            
+                            {/* 3. EDIT STUDIO / BRAND PICTURE BELOW 👇 */}
+                            <img 
+                                src="https://i.ibb.co/3YhtdBp5/image.jpg" alt="639716542-17849079153685224-5055920715201246793-n" 
+                                alt="Vgoddess Studio" 
+                                className="w-32 h-32 rounded-3xl border-2 border-white/20 p-1 shadow-2xl object-cover rotate-3 hover:rotate-0 transition-transform duration-500" 
+                            />
+                        </div>
+
+                        {/* Text & Brand Section */}
+                        <div className="px-12 pb-8 text-center">
+                            <h1 className="text-4xl font-bold mb-2 tracking-tight">
+                                Miss
+                            </h1>
+                            <p className="text-indigo-400 text-sm font-bold tracking-[0.2em] uppercase mb-6">Mistress</p>
+                            <p className="text-gray-300 leading-relaxed text-md max-w-sm mx-auto opacity-90">
+                                
+Content Creator & Digital Artist. Join me on my creative journey through my official platforms my feet is waiting you👣🐕
+                            </p>
+                        </div>
+
+                        {/* Social Icons Section */}
+                        <div className="flex justify-center items-center gap-10 py-8 bg-black/30">
+                            <a href="https://x.com/VgoddessStudio" target="_blank" rel="noopener noreferrer" className="icon-hover">
+                                <svg className="w-7 h-7" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                            </a>
+                            
+                            <a href="https://www.instagram.com/laurakraft90/" target="_blank" rel="noopener noreferrer" className="icon-hover">
+                                <svg className="w-7 h-7" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                            </a>
+
+                            <a href="https://t.me/Valerianoire" target="_blank" rel="noopener noreferrer" className="icon-hover">
+                                <svg className="w-7 h-7" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
+                                    <path d="m22 2-7 20-4-9-9-4Z"></path>
+                                    <path d="M22 2 11 13"></path>
+                                </svg>
+                            </a>
+                        </div>
+
+                        {/* Call to Action Buttons */}
+                        <div className="p-10 flex flex-col sm:flex-row gap-4">
+                            <a href="https://throne.com/valerianoire" target="_blank" rel="noopener noreferrer" className="btn-secondary flex-1 text-center py-4 rounded-2xl font-bold hover:bg-white/20 transition-all">
+                                Throne Wishlist 🎁
+                            </a>
+                            <a href="https://www.tipfunder.com/Vgoddess" target="_blank" rel="noopener noreferrer" className="btn-primary flex-1 text-center py-4 rounded-2xl font-bold hover:opacity-90 transition-all shadow-lg shadow-purple-500/30">
+                                Tipfunder Support ☕
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            );
+        };
+
+        const root = ReactDOM.createRoot(document.getElementById('root'));
+        root.render(<ProfileCard />);
+    </script>
+</body>
+</html>
